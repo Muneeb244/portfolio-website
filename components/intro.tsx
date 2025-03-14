@@ -65,9 +65,11 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Muneeb.</span> I'm a{" "}
         <span className="font-bold">Full-Stack Mobile App Developer</span> with{" "}
         <span className="font-bold">1+ year</span> of experience in{" "}
-        <span className="italic">React Native & Expo</span>, building{" "}
-        <span className="font-bold">scalable, high-performance</span> iOS &
-        Android apps.
+        <span className="italic">
+          React Native, Expo, and backend development with Node.js & NestJS
+        </span>
+        , building <span className="font-bold">scalable, high-performance</span>{" "}
+        iOS & Android apps.
       </motion.h1>
 
       <motion.div
