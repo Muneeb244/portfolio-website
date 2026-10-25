@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    qualities: [75, 95],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "avatars.githubusercontent.com",
+        hostname: "media.licdn.com",
       },
     ],
-  },
-  experimental: {
-    serverActions: true,
   },
 };
 

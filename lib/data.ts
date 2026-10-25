@@ -1,10 +1,9 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import meet from "@/public/meet.png";
 import namemaster from "@/public/namemaster.png";
+import naviq from "@/public/naviq.png";
 import tasbeeh from "@/public/tasbeeh.png";
+import { Briefcase, Code, GraduationCap } from "lucide-react";
+import React from "react";
 
 export const links = [
   {
@@ -38,24 +37,24 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Texinity Technologies, Islamabad, Pakistan",
     description:
-      "Leading end-to-end mobile app development with React Native and Node.js. Deployed scalable apps with zero post-launch critical failures while maintaining highly positive user feedback.",
-    icon: React.createElement(FaReact),
+      "Develop responsive web (Next.js) and mobile (React Native) interfaces, build REST APIs with NestJS and PostgreSQL, write Python scripts for ETL jobs, integrate third-party services, and manage application state across the full stack.",
+    icon: React.createElement(Code),
     date: "Oct 2024 - Present",
   },
   {
     title: "Associate Software Engineer",
     location: "Texinity Technologies, Islamabad, Pakistan",
     description:
-      "Developed high-performance applications using React Native,Next.js and Node.js. Built web apps & cross-platform mobile apps with React Native, ensuring scalability and maintainability.",
-    icon: React.createElement(CgWorkAlt),
+      "Built web and cross-platform mobile apps with Next.js, React Native, and Node.js, working closely with senior engineers to ship production features.",
+    icon: React.createElement(Briefcase),
     date: "May 2024 - Sep 2024",
   },
   {
     title: "MERN Stack Developer Intern",
     location: "Texinity Technologies, Islamabad, Pakistan",
     description:
-      "Implemented modern JavaScript (ES6) and React practices for efficient coding. Worked with React Native, Node.js, and Socket.io to build scalable applications.",
-    icon: React.createElement(CgWorkAlt),
+      "Built web and mobile applications with React Native, Node.js, and Socket.IO, applying modern JavaScript (ES6) and React best practices.",
+    icon: React.createElement(Briefcase),
     date: "July 2023 - Aug 2023",
   },
   {
@@ -63,32 +62,54 @@ export const experiencesData = [
     location: "COMSATS University, Islamabad, Pakistan",
     description:
       "Completed my degree with a focus on Object-Oriented Programming, Data Structures & Algorithms, and Databases. Achieved 1st position in the Final Year Project (AI Category) at COMSATS Project & Career Expo SP24.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(GraduationCap),
     date: "2020 - 2024",
   },
 ] as const;
 
-
 export const projectsData = [
+  {
+    title: "NavIQ",
+    description:
+      "AI-powered platform for higher education, combining integrations, analytics, intelligent capabilities, and a mobile app for AI-powered conversations.",
+    tags: [
+      "Next.js",
+      "React",
+      "React Native",
+      "Expo",
+      "NestJS",
+      "GCS",
+      "REST APIs",
+      "SSE",
+    ],
+    imageUrl: naviq,
+  },
   {
     title: "Namemaster",
     description:
-      "I worked as a full-stack developer on this gamified project. Users can play three levels of games to earn stars.",
+      "A gamified platform where users can play through three levels of games, earn stars, and track their progress.",
     tags: ["React Native", "Node.js", "Express.js", "MongoDB", "Redux Toolkit"],
     imageUrl: namemaster,
   },
   {
     title: "Digital Tasbeeh Counter",
     description:
-    "A digital Tasbeeh counter app for Muslims with Namaz timings, Duas, custom themes, multi-language support, and in-app purchases.",
+      "A digital Tasbeeh counter app for Muslims with Namaz timings, Duas, custom themes, multi-language support, and in-app purchases.",
     tags: ["React Native", "Expo", "RevenueCat", "Redux Toolkit"],
     imageUrl: tasbeeh,
   },
   {
     title: "Google Meet Clone",
-    description:
-      "A Google Meet clone with real-time video and audio calling.",
-    tags: ["React Native", "WebRTC", "Node.js", "Express.js", "MongoDB", "Socket.io", "Redux Toolkit"],
+    description: "A Google Meet clone with real-time video and audio calling.",
+    tags: [
+      "React Native",
+      "WebRTC",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "Redux Toolkit",
+    ],
     imageUrl: meet,
   },
 ] as const;
@@ -98,27 +119,24 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
-  "React Native",
   "React",
   "Next.js",
+  "React Native",
   "Redux",
   "Redux Toolkit",
   "Node.js",
-  "NestJS",
   "Express.js",
+  "NestJS",
+  "Python",
   "REST APIs",
   "GraphQL",
+  "WebRTC",
+  "Socket.IO",
+  "PostgreSQL",
   "MongoDB",
   "SQL",
-  "PostgreSQL",
-  "Git/Github",
-  "Tailwind CSS",
-  "WebRTC",
-  "Socket.io",
   "Firebase",
-  "Flask",
-  "Python",
-  "C++",
-  "Java",
-  "Rust",
+  "Tailwind CSS",
+  "Git",
+  "GitHub",
 ] as const;

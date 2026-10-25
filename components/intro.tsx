@@ -1,14 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+import { ArrowRight, Download, User, GitBranch } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -18,7 +15,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -31,7 +28,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://avatars.githubusercontent.com/u/91079744?v=4"
+              src="https://media.licdn.com/dms/image/v2/D4D03AQHjr9n75LLt1w/profile-displayphoto-scale_200_200/B4DZ9qvjyVJQAc-/0/1784202281092?e=1794441600&v=beta&t=zFZanUwcAnlMKzdmKzGCaNG1QvYI_A8gjclrcsyXVSQ"
               alt="Muneeb portrait"
               width="192"
               height="192"
@@ -63,13 +60,13 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Muneeb.</span> I'm a{" "}
-        <span className="font-bold">Full-Stack Mobile App Developer</span> with{" "}
-        <span className="font-bold">1+ year</span> of experience in{" "}
+        <span className="font-bold">Full Stack Software Engineer</span> with{" "}
+        <span className="font-bold">3+ years</span> of experience in building{" "}
         <span className="italic">
-          React Native, Expo, and backend development with Node.js & NestJS
+          <span className="font-bold">scalable, high-performance</span> web and
+          mobile applications using React, Next.js, and React Native, with
+          backend development in NestJS and PostgreSQL.
         </span>
-        , building <span className="font-bold">scalable, high-performance</span>{" "}
-        iOS & Android apps.
       </motion.h1>
 
       <motion.div
@@ -89,7 +86,7 @@ export default function Intro() {
           }}
         >
           Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <ArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
@@ -98,7 +95,7 @@ export default function Intro() {
           download
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <Download className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
@@ -106,7 +103,7 @@ export default function Intro() {
           href="https://www.linkedin.com/in/muneeb244"
           target="_blank"
         >
-          <BsLinkedin />
+          <User />
         </a>
 
         <a
@@ -114,7 +111,7 @@ export default function Intro() {
           href="https://github.com/Muneeb244"
           target="_blank"
         >
-          <FaGithubSquare />
+          <GitBranch />
         </a>
       </motion.div>
     </section>
